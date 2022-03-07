@@ -1,4 +1,4 @@
-public class CavalryUnit extends Unit2 {
+public class CavalryUnit extends Unit {
 
     private int numAttacks=0;
 

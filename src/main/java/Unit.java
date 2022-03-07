@@ -1,11 +1,11 @@
-public abstract class Unit2 {
+public abstract class Unit {
 
     private String name;
     private int health;
     private int attack;
     private int armor;
 
-    public Unit2(String name, int health, int attack, int armor) {
+    public Unit(String name, int health, int attack, int armor) {
 
         this.name = name;
         this.health = health;
@@ -13,7 +13,7 @@ public abstract class Unit2 {
         this.armor = armor;
     }
 
-    public void attack(Unit2 unit2){
+    public void attack(Unit unit2){
 
         int x = unit2.health - (this.attack+this.getAttackBonus()) + (unit2.armor+unit2.getResistBonus());
         unit2.setHealth(x);

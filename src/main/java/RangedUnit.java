@@ -1,4 +1,4 @@
-public class RangedUnit extends Unit2{
+public class RangedUnit extends Unit {
 
     public int numAttacks=3;
 

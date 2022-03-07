@@ -6,7 +6,7 @@ import java.util.Random;
 public class Army {
 
     private String armyName;
-    private List<Unit2> units;
+    private List<Unit> units;
 
     public Army(String armyName) {
 
@@ -14,7 +14,7 @@ public class Army {
         this.units = new ArrayList<>();
     }
 
-    public Army(String armyName, List<Unit2> units) {
+    public Army(String armyName, List<Unit> units) {
 
         this.armyName =  armyName;
         this.units =  units;
@@ -25,17 +25,17 @@ public class Army {
         return armyName;
     }
 
-    public void add(Unit2 unit) {
+    public void add(Unit unit) {
 
         this.units.add(unit);
     }
 
-    public void addAll(List<Unit2> unitList) {
+    public void addAll(List<Unit> unitList) {
 
         this.units.addAll(unitList);
     }
 
-    public void remove(Unit2 unit) {
+    public void remove(Unit unit) {
 
         this.units.remove(unit);
     }
@@ -49,17 +49,17 @@ public class Army {
         }
     }
 
-    public List<Unit2> getAllUnits() {
+    public List<Unit> getAllUnits() {
 
         return units;
     }
 
-    public Unit2 getRandom() {
+    public Unit getRandom() {
 
         Random rand = new Random();
         int upperbound = units.size();
         int intRandom = rand.nextInt(upperbound);
-        Unit2 randomUnit = units.get(intRandom);
+        Unit randomUnit = units.get(intRandom);
         return randomUnit;
     }
 

@@ -1,4 +1,4 @@
-public class InfantryUnit extends Unit2{
+public class InfantryUnit extends Unit {
 
     public InfantryUnit(String name, int health, int attack, int armor)
     {

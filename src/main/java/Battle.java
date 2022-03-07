@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Battle {
 
     private Army armyOne;
@@ -15,8 +13,8 @@ public class Battle {
 
         while(true) {
 
-            Unit2 unitOne = armyOne.getRandom();
-            Unit2 unitTwo = armyTwo.getRandom();
+            Unit unitOne = armyOne.getRandom();
+            Unit unitTwo = armyTwo.getRandom();
             unitOne.attack(unitTwo);
             if (unitOne.getHealth() < 0) {
                 armyOne.remove(unitOne);
