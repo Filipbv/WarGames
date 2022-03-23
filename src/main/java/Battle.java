@@ -13,9 +13,7 @@ public class Battle {
 
         while(true) {
 
-            Unit unitOne = if (armyOne.hasUnits){
-                armyOne.getRandom();
-            }
+            Unit unitOne = armyOne.getRandom();
             Unit unitTwo = armyTwo.getRandom();
             unitOne.attack(unitTwo);
             if (unitOne.getHealth() < 0) {
