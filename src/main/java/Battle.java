@@ -1,5 +1,7 @@
 public class Battle {
-
+    /**
+     * test
+     */
     private Army armyOne;
     private Army armyTwo;
 
